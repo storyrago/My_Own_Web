@@ -1,54 +1,106 @@
-html, body {
-    margin: 0px;
-    height: 100%;
-}
+    html, body {
+        margin: 0px;
+        height: 100%;
+    }
 
+    #background-text {
+        position: relative;
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+    }
 
+    #background-text h1 {
+        font-size: 10vw;
+        color: white;
+        position: relative;
+        z-index: 1;
+        text-align: center;
+        opacity: 0.2;
+        font-family:impact, sans-serif;
+        font-style:italic;
+    }
 
-a, a:visited, a:hover, a:active {
-    text-decoration: none;
-    color: inherit;
-}
-
-
-
-h1 {
-    margin: 0px;
-    padding: 20px;
-}
-
-#wrap {
-    min-height: 100%;
-}
-
-#content {
-    text-align: center;
-}
-#reload{
-    text-align:right;
-    font-size: 15px;
-    text-decoration: none;
-}
-ol {
-    font-size: 30px;
-    list-style: none;
-    padding: 0px;
-}
-
-li {
-    padding: 3px;
-}
-
-footer {
+    #background-cover{
     position: absolute;
-    bottom: 0;
-    background-color: rgb(255, 255, 255);
-    height: 100px;
-    width: 100%;
-    padding: 10px;
-    box-sizing: border-box;
-}
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0,0,0,0.6); /* 반투명 블랙 */
+        z-index: 0;
+    }
 
-footer div {
-    text-align: center;
-}
+    #wrap {
+        min-height: 100%;
+    }
+
+    #content {
+        text-align: center;
+        font-family:sans-serif;
+
+    }
+    #list {
+        position: absolute;
+        top: 70px;
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: 2;
+    }
+
+    #list a {
+        font-size: 2rem;
+        font-weight: bold;
+        color: #fff;
+        text-decoration: none;
+    }
+
+    ol {
+        font-size: 30px;
+        list-style: none;
+        padding: 0px;
+    }
+
+    li {
+        padding: 3px;
+        font-family:sans-serif;
+    }
+
+
+    header{
+        position: fixed;
+        top: 0;
+        background-color: rgb(51, 51, 51);
+        height: 50px;
+        width: 100%;
+        padding: 10px;
+        box-sizing: border-box;
+        z-index:10;
+    }
+
+    #reload a{
+        color: white;
+        text-decoration: none;
+        font-weight: bold;
+        position: relative;
+        z-index: 11;
+    }
+    footer {
+        position: fixed;
+        bottom: 0;
+        background-color: rgb(51, 51, 51);
+        height: 50px;
+        width: 100%;
+        padding: 10px;
+        box-sizing: border-box;
+    }
+
+    footer a {
+        text-decoration-line:none;
+        margin-left: 90%;
+        color:white;
+        font-family:impact;
+    }
