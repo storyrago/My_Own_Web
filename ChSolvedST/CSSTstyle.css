@@ -4,13 +4,13 @@ body {
   margin: 0;
   padding: 0;
 }
-
 #wrap {
   width: 600px;
   margin: auto;
   padding: 20px;
-  background: white;
-  box-shadow: 0 0 10px #ccc;
+  background: rgb(166, 218, 162);
+  box-shadow: 0 0 10px rgb(166, 218, 162);
+
 }
 
 header, footer {
@@ -22,8 +22,16 @@ header, footer {
 }
 
 .stat {
-  padding: 10px;
-  border: 1px solid #ddd;
-  margin-bottom: 5px;
-  border-radius: 5px;
+  padding: 15px;
+  border: 5px solid #76be7b;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  font-weight:bold;
+  font-size:100%;
+  color:#3c453d;
+  background-color:rgb(207, 231, 207);
+}
+#tierImg{
+  width: 25px;
+  height: 25px;
 }
